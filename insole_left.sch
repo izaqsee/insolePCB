@@ -1,0 +1,317 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TWE-Lite
+LIBS:akizuki
+LIBS:insole_left-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TWE_LITE_SMD U1
+U 1 1 5A648F7A
+P 3600 3250
+F 0 "U1" H 3600 3150 50  0000 C CNN
+F 1 "TWE_LITE_SMD" H 3600 4050 50  0000 C CNN
+F 2 "favorites:TWE-001L-SMD" H 3350 2000 50  0001 C CNN
+F 3 "DOCUMENTATION" H 3950 2000 50  0001 C CNN
+	1    3600 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4350 2750
+NoConn ~ 4350 2850
+NoConn ~ 4350 3450
+NoConn ~ 4350 3550
+NoConn ~ 4350 3650
+NoConn ~ 4350 3750
+NoConn ~ 2850 4200
+NoConn ~ 2850 4100
+NoConn ~ 2850 4000
+NoConn ~ 2850 3900
+NoConn ~ 2850 3300
+NoConn ~ 2850 3200
+NoConn ~ 2850 2800
+NoConn ~ 2850 2700
+NoConn ~ 2850 2600
+$Comp
+L GND #PWR01
+U 1 1 5A649042
+P 4750 4300
+F 0 "#PWR01" H 4750 4050 50  0001 C CNN
+F 1 "GND" H 4750 4150 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 2600 2    60   Input ~ 0
+VCC
+$Comp
+L 2SC1815 Q1
+U 1 1 5A6490A0
+P 5350 3400
+F 0 "Q1" H 5550 3475 50  0000 L CNN
+F 1 "2SC1815" H 5550 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5550 3325 50  0001 L CIN
+F 3 "" H 5350 3400 50  0001 L CNN
+	1    5350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A6490DD
+P 5450 3600
+F 0 "#PWR02" H 5450 3350 50  0001 C CNN
+F 1 "GND" H 5450 3450 50  0000 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q2
+U 1 1 5A64910F
+P 6300 3400
+F 0 "Q2" H 6500 3475 50  0000 L CNN
+F 1 "2SC1815" H 6500 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6500 3325 50  0001 L CIN
+F 3 "" H 6300 3400 50  0001 L CNN
+	1    6300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A649116
+P 6400 3600
+F 0 "#PWR03" H 6400 3350 50  0001 C CNN
+F 1 "GND" H 6400 3450 50  0000 C CNN
+F 2 "" H 6400 3600 50  0001 C CNN
+F 3 "" H 6400 3600 50  0001 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5A64919C
+P 7600 2950
+F 0 "BT1" H 7700 3050 50  0000 L CNN
+F 1 "Battery" H 7700 2950 50  0000 L CNN
+F 2 "mylib:Keystone_3034_1x20mm-CoinCell_akizuki" V 7600 3010 50  0001 C CNN
+F 3 "" V 7600 3010 50  0001 C CNN
+	1    7600 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 2050 1    60   Input ~ 0
+VCC
+$Comp
+L GND #PWR04
+U 1 1 5A649214
+P 7600 3350
+F 0 "#PWR04" H 7600 3100 50  0001 C CNN
+F 1 "GND" H 7600 3200 50  0000 C CNN
+F 2 "" H 7600 3350 50  0001 C CNN
+F 3 "" H 7600 3350 50  0001 C CNN
+	1    7600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3900 4750 3900
+Wire Wire Line
+	4750 3900 4750 4300
+Wire Wire Line
+	4350 4000 4750 4000
+Connection ~ 4750 4000
+Wire Wire Line
+	4350 4100 4750 4100
+Connection ~ 4750 4100
+Wire Wire Line
+	4350 4200 4750 4200
+Connection ~ 4750 4200
+Wire Wire Line
+	4750 4300 4350 4300
+Wire Wire Line
+	4350 2600 4450 2600
+Wire Wire Line
+	4950 3950 6100 3950
+Wire Wire Line
+	7600 2750 7600 2600
+Wire Wire Line
+	7600 3350 7600 3150
+Wire Wire Line
+	5450 2550 5450 3200
+Wire Wire Line
+	6100 3200 6400 3200
+$Comp
+L Conn_01x10_Female J1
+U 1 1 5A717BC7
+P 5700 2100
+F 0 "J1" H 5700 2600 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 5700 1500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm" H 5700 2100 50  0001 C CNN
+F 3 "" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A717C68
+P 5000 3400
+F 0 "R3" V 5080 3400 50  0000 C CNN
+F 1 "1k" V 5000 3400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4930 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A717D38
+P 6100 3600
+F 0 "R4" V 6180 3600 50  0000 C CNN
+F 1 "1k" V 6100 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 6030 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3450 6100 3400
+Wire Wire Line
+	6100 3950 6100 3750
+Wire Wire Line
+	4800 3400 4850 3400
+Wire Wire Line
+	4800 3100 4800 3400
+Wire Wire Line
+	4650 3000 4650 3750
+Wire Wire Line
+	4650 3750 4950 3750
+Wire Wire Line
+	4950 3750 4950 3950
+Text GLabel 2850 2950 0    60   Input ~ 0
+RX
+Text GLabel 2850 3050 0    60   Input ~ 0
+TX
+$Comp
+L GND #PWR05
+U 1 1 5A717E43
+P 5800 2300
+F 0 "#PWR05" H 5800 2050 50  0001 C CNN
+F 1 "GND" H 5800 2150 50  0000 C CNN
+F 2 "" H 5800 2300 50  0001 C CNN
+F 3 "" H 5800 2300 50  0001 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 2300
+NoConn ~ 5300 2300
+Text GLabel 5400 2300 3    60   Input ~ 0
+TX
+Text GLabel 5500 2300 3    60   Input ~ 0
+RX
+Text GLabel 5600 2300 3    60   Input ~ 0
+VCC
+Text GLabel 2850 3750 0    60   Input ~ 0
+VCC
+Text GLabel 2850 3650 0    60   Input ~ 0
+VCC
+Text GLabel 2150 3800 3    60   Input ~ 0
+VCC
+$Comp
+L R R2
+U 1 1 5A71804E
+P 2150 3650
+F 0 "R2" V 2230 3650 50  0000 C CNN
+F 1 "100k" V 2150 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 2080 3650 50  0001 C CNN
+F 3 "" H 2150 3650 50  0001 C CNN
+	1    2150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A7180B1
+P 2150 3350
+F 0 "R1" V 2230 3350 50  0000 C CNN
+F 1 "100k" V 2150 3350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 2080 3350 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+	1    2150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5A71810C
+P 2150 3200
+F 0 "#PWR06" H 2150 2950 50  0001 C CNN
+F 1 "GND" H 2150 3050 50  0000 C CNN
+F 2 "" H 2150 3200 50  0001 C CNN
+F 3 "" H 2150 3200 50  0001 C CNN
+	1    2150 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 3450 2250 3450
+Wire Wire Line
+	2250 3450 2250 3500
+Wire Wire Line
+	2250 3500 2150 3500
+Text GLabel 2850 3550 0    60   Input ~ 0
+VCC
+Wire Wire Line
+	5900 2300 5900 2550
+Connection ~ 5900 2550
+Wire Wire Line
+	5900 2550 5450 2550
+Wire Wire Line
+	6100 2300 6100 3200
+Text GLabel 6200 2300 3    60   Input ~ 0
+VCC
+Text GLabel 6000 2300 3    60   Input ~ 0
+VCC
+Wire Wire Line
+	4350 3100 4800 3100
+Wire Wire Line
+	4350 3000 4650 3000
+Connection ~ 4650 3300
+NoConn ~ 4350 3200
+NoConn ~ 4350 3300
+$EndSCHEMATC
